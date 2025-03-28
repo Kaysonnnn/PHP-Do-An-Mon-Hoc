@@ -1,0 +1,9 @@
+# Kích hoạt chế độ rewrite
+RewriteEngine On
+
+# Các yêu cầu không phải file (!-f) hoặc thư mục (!-d) thực sẽ được chuyển đến index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Điều hướng yêu cầu đến index.php
+RewriteRule ^(.*)$ index.php [QSA,L]

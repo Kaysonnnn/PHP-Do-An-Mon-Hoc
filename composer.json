@@ -1,0 +1,22 @@
+{
+    "require": {
+        "stripe/stripe-php": "^16.3",
+        "google/apiclient": "^2.18",
+        "firebase/php-jwt": "^6.10",
+        "zircote/swagger-php": "^4.11",
+        "doctrine/annotations": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\config\\": "app/config",
+            "app\\controllers\\": "app/controllers",
+            "app\\controllers\\admin\\": "app/controllers/admin",
+            "app\\controllers\\customer\\": "app/controllers/customer",
+            "app\\controllers\\api\\": "app/controllers/api",
+            "app\\helpers\\": "app/helpers",
+            "app\\middleware\\": "app/middleware",
+            "app\\models\\": "app/models",
+            "app\\routes\\": "app/routes"
+        }
+    }
+}
